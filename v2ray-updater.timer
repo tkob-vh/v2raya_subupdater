@@ -1,0 +1,10 @@
+[Unit]
+Description=Run V2Ray Subscription Updater every 2 hours
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=2h
+Unit=v2ray-updater.service
+
+[Install]
+WantedBy=timers.target

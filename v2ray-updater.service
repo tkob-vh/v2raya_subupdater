@@ -1,0 +1,13 @@
+[Unit]
+Description=V2Ray Subscription Updater
+After=network.target
+
+[Service]
+WorkingDirectory=/THE/WORKDIR/OF/run_scheduler.sh
+ExecStart=/PATH/TO/THE/run_scheduler.sh
+StandardOutput=journal
+StandardError=journal
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
